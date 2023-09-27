@@ -20,7 +20,7 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', "sphinx.ext.autodoc", 'autoapi.extension']
+extensions = ['myst_parser', 'autoapi.extension']
 
 autoapi_dirs = ['../src']
 
