@@ -1,0 +1,27 @@
+:py:mod:`src.module1.function2`
+===============================
+
+.. py:module:: src.module1.function2
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   src.module1.function2.make_lower
+
+
+
+.. py:function:: make_lower(s)
+
+   Multiply two numbers.
+
+   :param s: A string.
+   :return: Lowercase.
+
+

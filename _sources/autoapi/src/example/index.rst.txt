@@ -1,0 +1,28 @@
+:py:mod:`src.example`
+=====================
+
+.. py:module:: src.example
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   src.example.multiply
+
+
+
+.. py:function:: multiply(a: float, b: float) -> float
+
+   Multiply two numbers.
+
+   :param a: First number.
+   :param b: Second number.
+   :return: The product of a and b.
+
+
