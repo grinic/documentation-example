@@ -20,9 +20,17 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'autoapi.extension', 'sphinx.ext.viewcode']
+extensions = ['myst_parser', 'autoapi.extension', 'sphinx.ext.linkcode']
 
 autoapi_dirs = ['../src']
+
+def linkcode_resolve(domain, info):
+    if domain != 'py':
+        return None
+    if not info['module']:
+        return None
+    filename = info['module'].replace('.', '/')
+    return "https://github.com/grinic/documentation-example/%s.py" % filename
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
