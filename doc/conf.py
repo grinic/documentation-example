@@ -30,7 +30,7 @@ def linkcode_resolve(domain, info):
     if not info['module']:
         return None
     filename = info['module'].replace('.', '/')
-    return "https://github.com/grinic/documentation-example/%s.py" % filename
+    return "https://github.com/grinic/documentation-example/blob/main/%s.py" % filename
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
