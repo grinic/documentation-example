@@ -20,9 +20,10 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['myst_parser', 'autoapi.extension']
+extensions = ['myst_parser', 'autoapi.extension', 'sphinx.ext.inheritance_diagram']
 
 autoapi_dirs = ['../src']
+autoapi_options = ["show-inheritance-diagram"]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
