@@ -25,6 +25,7 @@ extensions = ['myst_parser', 'autoapi.extension', 'sphinx.ext.linkcode']
 autoapi_dirs = ['../src']
 
 def linkcode_resolve(domain, info):
+    
     if domain != 'py':
         return None
     if not info['module']:
